@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Travel Buddy</title>
+    <meta name="title" content="Travel Buddy" />
+    <meta name="author" content="Travel Buddy" />
+    <meta name="keywords" content="Travel Buddy" />
+    <meta name="description" content="Travel Buddy" />
+    <link rel="shortcut icon" href="./assets/images/icons/favicon.ico">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/responsive.css" type="text/css">
+
+</head>
+
+<body>
+    <div id="preloader" class="preloader">
+        <img src="./assets/images/preloader.gif" />
+    </div>
+    
+    <header>
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg shadow">
+                <div class="container-fluid px-4 justify-content-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/images/logo.png" alt="Travel Buddy">
+                    </a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-main">
+                        <div class="d-flex">
+                            <div class="dropdown mx-4">
+                                <button type="button" class="btn btn-lg btn-outline-primary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    English
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="mobile-menu d-lg-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-lg w-100 btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Login
+                        </button>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown w-100">
+                            <button type="button" class="btn btn-lg w-100 btn-outline-light dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                English
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="header-curved">
+            <div class="header-curved-image">
+                <div class="header-curved-image-inner" style="visibility: visible;">
+                    <img src="assets/images/slider.jpg">
+                </div>
+                <div class="header-curved-caption">
+                    <div class="container text-center">
+                        <div style="max-width: 800px;" class="mx-auto">
+                            <h1 class="header-curved-title display-5 text-white">
+                                Travel differently, <br>
+                                connect globally
+                            </h1>
+                            <p class="header-curved-text">
+                                <span class="hidden-xxs">
+                                    The largest and safest community for cultural exchange, working holidays,
+                                    volunteering and house sitting in 170 countries.
+                                </span>
+                                <span class="visible-xxs-inline">
+                                    Cultural exchange, working holidays and volunteering
+                                </span>
+                            </p>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-lg btn-primary d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                    Login Now 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="section">
+            <div class="container col-xxl-10 px-4">
+                <div class="section-title">
+                    <h1>Frequently Asked Questions</h1>
+                </div>
+                <div class="section-container">
+                    <div class="accordion" id="faq-accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq_1" aria-expanded="true" aria-controls="faq_1">
+                                    What is Lorem Ipsum?
+                                </button>
+                            </h2>
+                            <div id="faq_1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                    with desktop publishing software like Aldus PageMaker including versions of Lorem
+                                    Ipsum.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq_2" aria-expanded="false" aria-controls="faq_2">
+                                    Where does it come from?
+                                </button>
+                            </h2>
+                            <div id="faq_2" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                    piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                    Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+                                    up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+                                    going through the cites of the word in classical literature, discovered the
+                                    undoubtable source.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq_3" aria-expanded="false" aria-controls="faq_3">
+                                    Why do we use it?
+                                </button>
+                            </h2>
+                            <div id="faq_3" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq_4" aria-expanded="false" aria-controls="faq_4">
+                                    Why do we use it?
+                                </button>
+                            </h2>
+                            <div id="faq_4" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq_5" aria-expanded="false" aria-controls="faq_5">
+                                    Why do we use it?
+                                </button>
+                            </h2>
+                            <div id="faq_5" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq_6" aria-expanded="false" aria-controls="faq_6">
+                                    Why do we use it?
+                                </button>
+                            </h2>
+                            <div id="faq_6" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    It is a long established fact that a reader will be distracted by the readable
+                                    content of a page when looking at its layout. The point of using Lorem Ipsum is that
+                                    it has a more-or-less normal distribution of letters, as opposed to using 'Content
+                                    here, content here', making it look like readable English.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-3 mt-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mx-5 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Terms & Conditions</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Privacy Policy</a></li>
+        </ul>
+        <p class="text-center text-light">© 2025 Travel Buddy. All Right Reserved</p>
+    </footer>
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Log in to Travel Buddy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row justify-content-center">
+                        <div class="col-md-5">
+                            <div class="form-box">
+                                <div class="form-top">
+                                    <div class="form-top-left">
+                                        <h3>Login to our site</h3>
+                                        <p>Enter username and password to log on:</p>
+                                    </div>
+                                    <div class="form-top-right">
+                                        <i class="bi bi-key-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="form-bottom">
+                                    <form role="form" action="" method="post" class="login-form">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" name="form-username" placeholder="Username..." id="form-username">
+                                            <label for="form-username">Username</label>
+                                        </div>
+                                        <div class="form-floating mb-2">
+                                            <input type="password" class="form-control" name="form-password" placeholder="Password..." id="form-password">
+                                            <label for="form-password">Password</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-lg btn-primary mt-4">Sign in!</button>
+                                    </form>
+                                    <span class="login-form-divider">or</span>
+                                    <div class="social-login-buttons">
+                                        <a class="btn w-100 btn-lg btn-facebook" href="#">
+                                            <i class="bi bi-facebook"></i> Continue with Facebook
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1 d-flex justify-content-center align-items-center">
+                            <div class="middle-border"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-box">
+                                <div class="form-top">
+                                    <div class="form-top-left">
+                                        <h3>Sign up now</h3>
+                                        <p>Fill in the form below to get instant access:</p>
+                                    </div>
+                                    <div class="form-top-right">
+                                        <i class="bi bi-pencil-fill"></i>
+                                    </div>
+                                </div>
+                                <div class="form-bottom">
+                                    <form role="form" action="" method="post" class="registration-form">
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control" name="form-first-name" placeholder="First name..." id="form-first-name">
+                                            <label for="form-first-name">First name</label>
+                                        </div>
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control"  name="form-last-name" placeholder="Last name..." id="form-last-name">
+                                            <label for="form-last-name">Last name</label>
+                                        </div>
+                                        <div class="form-floating mb-2">
+                                            <input type="text" class="form-control"  name="form-email" placeholder="Email..." id="form-email">
+                                            <label for="form-email">Email</label>
+                                        </div>
+                                        <div class="form-floating mb-2">
+                                            <input type="password" class="form-control"  name="form-password" placeholder="Password..." id="form-password">
+                                            <label for="form-password">Password</label>
+                                        </div>
+                                        <div class="form-floating mb-2">
+                                            <input type="password" class="form-control"  name="form-repassword" placeholder="Re-enter Password..." id="form-repassword">
+                                            <label for="form-repassword">Re-enter Password</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-lg btn-primary mt-4">Sign me up!</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a id="back-to-top" title="Back to Top" class=""><i class="bi bi-arrow-up-circle-fill"></i></a>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

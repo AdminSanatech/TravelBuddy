@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Create Trip | Travel Buddy</title>
+    <meta name="title" content="Travel Buddy" />
+    <meta name="author" content="Travel Buddy" />
+    <meta name="keywords" content="Travel Buddy" />
+    <meta name="description" content="Travel Buddy" />
+    <link rel="shortcut icon" href="./assets/images/icons/favicon.ico">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-select.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/responsive.css" type="text/css">
+
+</head>
+
+<body>
+    <div id="preloader" class="preloader">
+        <img src="./assets/images/preloader.gif" />
+    </div>
+    <header>
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg shadow">
+                <div class="container-fluid px-4">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/images/logo.png" alt="Travel Buddy">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main"
+                        aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-main">
+                        <ul class="menu navbar-nav">
+                            <li class="nav-item"> 
+                                <a class="btn btn-lg btn-primary w-100 " href="#">Home</a> 
+                            </li>
+                            <li class="nav-item"> 
+                                <a class="btn btn-lg btn-primary w-100 " href="#">Inbox</a> 
+                            </li>
+                            <li class="nav-item"> 
+                                <a class="btn btn-lg btn-primary w-100 " href="#"> FAQ </a>
+                            </li>
+                            <li class="nav-item"> 
+                                <a class="btn btn-lg btn-primary w-100 " href="profile.html"> My Profile </a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block"> 
+                                <a class="btn btn-lg btn-primary w-100 " href="#"> Logout </a>
+                            </li>
+                            <li class="nav-item d-none d-lg-block"> 
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-lg w-100 btn-outline-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        English
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li><a class="dropdown-item" href="#">English</a></li>
+                                        <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="mobile-menu d-lg-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-lg w-100 btn-outline-light">
+                            Logout
+                        </button>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown w-100">
+                            <button type="button" class="btn btn-lg w-100 btn-outline-light dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                English
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h1>Create Trip</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="Trip Location" id="form-trip-location">
+                                        <label for="form-trip-location">Trip Location</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <input type="date" class="form-control" placeholder="Starting Date" id="form-starting-date">
+                                            <label for="form-starting-date">Starting Date</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <div class="form-floating">
+                                            <input type="date" class="form-control" placeholder="Ending Date" id="form-ending-date">
+                                            <label for="form-ending-date">Ending Date</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" placeholder="Daily Budget" id="form-daily-budget">
+                                        <label for="form-daily-budget">Trip Daily Budget</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Write About Your Trip" id="form-about-trip" style="height: 100px"></textarea>
+                                        <label for="form-about-trip">About Trip</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-control">
+                                        <label for="form-show-trip-to">Show my trip to : </label>
+                                        <select class="selectpicker w-100" id="form-show-trip-to" aria-label="I am" multiple>
+                                            <option value="Option 1">Option 1</option>
+                                            <option value="Option 2">Option 2</option>
+                                            <option value="Option 3">Option 3</option>
+                                            <option value="Option 4">Option 4</option>
+                                            <option value="Option 5">Option 5</option>
+                                            <option value="Option 6">Option 6</option>
+                                            <option value="Option 7">Option 7</option>
+                                            <option value="Option 8">Option 8</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <p class="fw-bold"> Show my trip to unverified users : </p>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio-unverified-users" id="radio-yes" value="Yes">
+                                        <label class="form-check-label" for="radio-male">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio-unverified-users" id="radio-no" value="No">
+                                        <label class="form-check-label" for="radio-no">No</label>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="fw-bold"> Can ordinary members contact you? : </p>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio-ordinary-users" id="radio-yes" value="Yes">
+                                        <label class="form-check-label" for="radio-male">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="radio-ordinary-users" id="radio-no" value="No">
+                                        <label class="form-check-label" for="radio-no">No</label>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <button class="btn btn-lg w-100 btn-primary">Submit</button>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="py-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mx-5 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Terms & Conditions</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Privacy Policy</a></li>
+        </ul>
+        <p class="text-center text-light">© 2025 Travel Buddy. All Right Reserved</p>
+    </footer>
+
+    <a id="back-to-top" title="Back to Top" class=""><i class="bi bi-arrow-up-circle-fill"></i></a>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/bootstrap-select.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>
