@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Travel Buddy</title>
+    <meta name="title" content="Travel Buddy" />
+    <meta name="author" content="Travel Buddy" />
+    <meta name="keywords" content="Travel Buddy" />
+    <meta name="description" content="Travel Buddy" />
+    <link rel="shortcut icon" href="~/images/icons/favicon.ico">
+
+    <link rel="stylesheet" href="~/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="~/css/bootstrap-icons.css" type="text/css">
+    <link rel="stylesheet" href="~/css/styles.css" type="text/css" asp-append-version="true">
+    <link rel="stylesheet" href="~/css/responsive.css" type="text/css" asp-append-version="true">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div id="preloader" class="preloader">
+        <img src="images/preloader.gif" />
+    </div>
+    
+    <header>
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg shadow">
+                <div class="container-fluid px-4 justify-content-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="~/images/logo.png" alt="Travel Buddy">
+                    </a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-main">
+                        <div class="d-flex">
+                            <div class="dropdown mx-4">
+                                <button type="button" class="btn btn-lg btn-outline-primary dropdown-toggle"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    English
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">English</a></li>
+                                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="mobile-menu d-lg-none">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-lg w-100 btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Login
+                        </button>
+                    </div>
+                    <div class="col">
+                        <div class="dropdown w-100">
+                            <button type="button" class="btn btn-lg w-100 btn-outline-light dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                English
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Hindi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        @RenderBody()     
+    </main>
+    <footer class="py-3 mt-3">
+        <ul class="nav justify-content-center border-bottom pb-3 mx-5 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Terms & Conditions</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Privacy Policy</a></li>
+        </ul>
+        <p class="text-center text-light">© 2025 Travel Buddy. All Right Reserved</p>
+    </footer>
+      
+    <a id="back-to-top" title="Back to Top" class=""><i class="bi bi-arrow-up-circle-fill"></i></a>
+
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/main.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
